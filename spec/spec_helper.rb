@@ -34,3 +34,7 @@ end
 Spork.each_run do
   SampleApp::Application.reload_routes!
 end
+
+def test_sign_in(user)
+  controller.sign_in(user)
+end
